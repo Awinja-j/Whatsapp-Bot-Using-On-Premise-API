@@ -6,9 +6,6 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-# Load .env file
-load_dotenv()
-
 messenger = WhatsApp(os.getenv("TOKEN"))
 VERIFY_TOKEN = os.environ("VERIFY_TOKEN")
 
