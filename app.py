@@ -7,7 +7,8 @@ from flask import Flask, request
 app = Flask(__name__)
 
 messenger = WhatsApp(os.getenv("TOKEN"))
-VERIFY_TOKEN = os.environ("VERIFY_TOKEN")
+VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
+
 
 
 @app.route("/", methods=["GET", "POST"])
