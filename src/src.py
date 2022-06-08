@@ -3,7 +3,7 @@
 import requests
 
 
-class WhatsApp(object):
+class WhatsApp:
     def __init__(self, token=None, phone_number_id=None):
         self.token = token
         self.url = f"https://graph.facebook.com/v13.0/{phone_number_id}/messages"

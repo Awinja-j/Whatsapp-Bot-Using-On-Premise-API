@@ -1,7 +1,6 @@
 import os
 import json
 from src.src import WhatsApp
-from dotenv import load_dotenv
 from flask import Flask, request
 
 
