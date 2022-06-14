@@ -16,19 +16,29 @@ See the [contributing guide]() for detailed instructions on how to get started w
 
 We accept different types of contributions, including some that don't require you to write a single line of code.
 
+For more complex contributions, you can open an issue using the most appropriate issue template to describe the changes you'd like to see.
+
+## Join us in discussions
+
+We use GitHub Discussions to talk about all sorts of topics related to documentation and this site. For example: if you'd like help troubleshooting a PR, have a great new idea, or want to share something amazing you've learned in our docs, join us in the discussions.
+
+And that's it!
 
 
-### Setting up your bot
+## READMEs & docs
 
-```
-```
-### Issues
+In addition to the README you're reading right now, this repo includes other READMEs that describe the purpose of each subdirectory in more detail:
+
+- 
+- 
+- 
+
+## License
+
+All code in this repository is licensed under the MIT license.
 
 
 
-### Contributing
-
-### References
 
 
 

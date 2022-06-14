@@ -1,7 +1,7 @@
 import os
 import json
 from flask import Flask, request
-from src.src import WhatsApp
+from Bot.src import WhatsApp
 
 
 app = Flask(__name__)

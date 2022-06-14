@@ -14,22 +14,5 @@ If you've found something in the code that should be updated, search open issues
 ### :hammer_and_wrench: Pull requests
 A [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) is a way to suggest changes in our repository.
 
-When we merge those changes, they should be deployed to the live site within 24 hours. :earth_africa: To learn more about opening a pull request in this repo, see [Opening a pull request]() below.
+When we merge those changes, they should be deployed to the live site within 24 hours. :earth_africa: To learn more about opening a pull request in this repo, see [Opening a pull request](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/Pull_Requests.md) below.
 
-We cannot accept contributions to the [REST API reference documentation](https://docs.github.com/en/rest/reference). If you spot an inaccuracy in the REST API reference documentation, open an issue in the [github/rest-api-description](https://github.com/github/rest-api-description/issues/new?template=schema-inaccuracy.md) repository.
-
-### :question: Support
-We are a small team working hard to keep up with the documentation demands of a continuously changing product. Unfortunately, we just can't help with support questions in this repository. If you are experiencing a problem with GitHub, unrelated to our documentation, please [contact GitHub Support directly](https://support.github.com/contact). Any issues, discussions, or pull requests opened here requesting support will be given information about how to contact GitHub Support, then closed and locked.
-
-If you're having trouble with your GitHub account, contact [Support](https://support.github.com/contact?tags=docs-contributing-guide).
-
-### :earth_asia: Translations
-
-This website is internationalized and available in multiple languages. The source content in this repository is written in English. We integrate with an external localization platform to work with professional translators in localizing the English content.
-
-**We do not currently accept contributions for translated content**, but we hope to in the future.
-
-### :balance_scale: Site Policy
-GitHub's site policies are published on docs.github.com, too!
-
-If you find a typo in the site policy section, you can open a pull request to fix it. For anything else, see [the CONTRIBUTING guide in the site-policy repo](https://github.com/github/site-policy/blob/main/CONTRIBUTING.md).
