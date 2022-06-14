@@ -1,15 +1,5 @@
-# WhatsApp Bot
+# Get started with Meta
 
-## Sample WhatsApp bot using python and WhatsApp on-premise API
-
-
-The WhatsApp Business Platform gives medium to large businesses the ability to connect with customers at scale. You can start conversations with customers in minutes, send customer care notifications or purchase updates, offer your customers a level of personalized service and provide support in the channel that your customers prefer to be reached on.
-
-Cloud API: Send and receive messages using a cloud-hosted version of the WhatsApp Business Platform.
-
-On-Premises API: Your business can host the WhatsApp Business API client on your own servers using the On-Premises API.
-
-Business Management API: The WhatsApp Business Management API allows you to programmatically manage your WhatsApp Business Account assets, such as message templates and phone numbers.
 
 Before You Start:
 
