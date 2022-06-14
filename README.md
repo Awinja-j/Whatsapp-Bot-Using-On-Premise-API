@@ -10,27 +10,13 @@
 4. Sending interactive buttons
 5. Sending template messages
 
-## Getting started
+## Contributing
 
-### Installation directly from repo
+See the [contributing guide]() for detailed instructions on how to get started with our project.
 
-1. If not already done, [install Docker Compose](https://docs.docker.com/compose/install/)
+We accept different types of contributions, including some that don't require you to write a single line of code.
 
-2. Search the Docker Hub for the Image
 
-```
-$ docker search Whatsapp-Bot-Using-On-Premise-API
-```
-2. Cd into the folder
-
-```
-$ cd Whatsapp-Bot-Using-On-Premise-API
-```
-3. Install with docker
-
-```
-$ docker-compose up -d
-```
 
 ### Setting up your bot
 

@@ -4,30 +4,19 @@
 
 The following is a set of guidelines for contributing to this repo. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
+Read our [Code of Conduct](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
-### Usage
+In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
-http://localhost/docs/
+## New contributor guide
 
+To get an overview of the project, read the README. Here are some resources to help you get started with contributions:
 
-# Testing
+- [Your first code contribution]()
+- [suggesting enhancements]()
+- [Getting Started with Meta]()
 
-```
-$ ./manage.py test
-```
+## Getting started
 
-# Submitting Changes
-
-- Reporting Bugs
-- Reporting Bugs
-- Suggesting Enhancements
-- Your First Code Contribution
-- Pull Requests
-
-# Coding conventions
-
-- Documentation Styleguide
-- Code Style Guide
-- Git Commit Messages
-- 
+To navigate our codebase with confidence, see the [Development Guide]()
 
