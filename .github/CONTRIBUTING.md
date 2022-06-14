@@ -40,7 +40,7 @@ see the [development guide](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Pr
 
 Commit the changes once you are happy with them.
 
-Once your changes are ready, don't forget to [self-review]() to speed up the review process⚡.
+Once your changes are ready, don't forget to [self-review](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/self-review.md) to speed up the review process⚡.
 
 ## Pull Request
 
