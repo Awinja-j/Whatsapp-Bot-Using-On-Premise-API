@@ -12,11 +12,11 @@ In this guide you will get an overview of the contribution workflow from opening
 
 To get an overview of the project, read the README. Here are some resources to help you get started with contributions:
 
-- [Your first code contribution]()
-- [suggesting enhancements]()
-- [Getting Started with Meta]()
+- [Your first code contribution](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/Your_First_Code_Contribution.md)
+- [suggesting enhancements](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/Suggesting_Enhancements.md)
+- [Getting Started with Meta](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/GETTING_STARTED_WITH_META.md)
 
 ## Getting started
 
-To navigate our codebase with confidence, see the [Development Guide]()
+To navigate our codebase with confidence, see the [Development Guide](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/DEVELOPMENT.md)
 

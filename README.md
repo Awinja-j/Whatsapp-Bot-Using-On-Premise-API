@@ -12,7 +12,7 @@
 
 ## Contributing
 
-See the [contributing guide]() for detailed instructions on how to get started with our project.
+See the [contributing guide](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/CONTRIBUTING.md) for detailed instructions on how to get started with our project.
 
 We accept different types of contributions, including some that don't require you to write a single line of code.
 
@@ -29,9 +29,8 @@ And that's it!
 
 In addition to the README you're reading right now, this repo includes other READMEs that describe the purpose of each subdirectory in more detail:
 
-- 
-- 
-- 
+- [Bot/README.md](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/Bot/README.md)
+- [Biz/README.md](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/tree/main/biz)
 
 ## License
 
