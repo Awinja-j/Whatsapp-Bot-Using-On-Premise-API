@@ -1,7 +1,7 @@
 import os
 import json
 from flask import Flask, request
-from .src.src import WhatsApp
+from src.src import WhatsApp
 
 
 app = Flask(__name__)
@@ -22,8 +22,11 @@ def webhook():
     if not data:
         return "No data"
     else:
-        return data
-    fields = ['messages', 'text', 'interactive']
+        fields = ['messages', 'text', 'interactive']
+        for field in fields:
+            if field in data:
+                messenger.process_data(data)
+                return "OK"
     # changed_field = messenger.changed_field(data)
     # if changed_field == "messages":
     #     new_message = messenger.get_mobile(data)
