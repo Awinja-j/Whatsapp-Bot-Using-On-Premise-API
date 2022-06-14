@@ -20,3 +20,36 @@ To get an overview of the project, read the README. Here are some resources to h
 
 To navigate our codebase with confidence, see the [Development Guide](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/DEVELOPMENT.md)
 
+Check to see what [types of contributions](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/TYPES_OF_CONTRIBUTIONS.md) we accept before making changes. Some of them don't even require writing a single line of code ✨.
+
+### Issues
+
+Create a new issue
+
+If you spot a problem with the docs, [search if an issue already exists](https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If a related issue doesn't exist, you can open a new issue using a relevant issue form.
+
+Solve an issue
+
+Scan through our [existing issues](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/issues) to find one that interests you. You can narrow down the search using labels as filters. See [Labels]() for more information. As a general rule, we don’t assign issues to anyone. If you find an issue to work on, you are welcome to open a PR with a fix.
+
+Make Changes
+
+see the [development guide](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/DEVELOPMENT.md)
+
+Commit your update
+
+Commit the changes once you are happy with them.
+
+Once your changes are ready, don't forget to [self-review]() to speed up the review process⚡.
+
+Pull Request
+
+When you're finished with the changes, create a pull request.
+Follow all instructions in the template
+
+Your PR is merged!
+
+
+
+
+
