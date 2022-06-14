@@ -2,7 +2,6 @@
 
 This document describes the process for running this application on your local computer.
 
-
 # Getting started
 
 This project is powered by Docker and Docker Compose.

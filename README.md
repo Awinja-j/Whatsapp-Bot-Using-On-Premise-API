@@ -31,10 +31,11 @@ In addition to the README you're reading right now, this repo includes other REA
 
 - [Bot/README.md](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/Bot/README.md)
 - [Biz/README.md](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/tree/main/biz)
+- [.github/GETTING_STARTED_WITH_META.md](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/.github/GETTING_STARTED_WITH_META.md)
 
 ## License
 
-All code in this repository is licensed under the MIT license.
+All code in this repository is licensed under the [GNU General Public License v3.0.](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/LICENSE)
 
 
 
