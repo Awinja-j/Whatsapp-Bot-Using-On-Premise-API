@@ -1,6 +1,6 @@
 # WhatsApp Bot
 
-### This is an open source image to build your Whatsapp Bot on premise using python and WhatsApp on-premise API.
+This is an open source image to build your Whatsapp Bot on premise using python and WhatsApp on-premise API.
 
 ## Features supported
 
@@ -36,6 +36,7 @@ In addition to the README you're reading right now, this repo includes other REA
 ## License
 
 All code in this repository is licensed under the [GNU General Public License v3.0.](https://github.com/Awinja-j/Whatsapp-Bot-Using-On-Premise-API/blob/main/LICENSE)
+
 
 
 

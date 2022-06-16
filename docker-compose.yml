@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    command: /bin/sh -c ("python app.py db init && python app.py db migrate && python app.py db upgrade && gunicorn --bind 0.0.0.0:5000 app:app")
+    environment:
+      - Debug=1
+    env_file:
+      - .env
+    ports:
+      - "5000:5000"
+    restart: on-failure
+    volumes:
+      - ./:/whatsapp-bot
+

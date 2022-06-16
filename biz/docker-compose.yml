@@ -25,10 +25,9 @@ services:
         - "33060:3306"
     volumes:
      - postgresData:/var/lib/postgresql/data
+    network_mode: bridge
     cap_drop:
       - MKNOD
-    networks:
-      - bot-bridge
   wacore:
     image: docker.whatsapp.biz/coreapp:v${WA_API_VERSION:?Run docker-compose with env var WA_API_VERSION (ex. WA_API_VERSION=2.39.2 docker-compose <command> <options>)}
     command: ["/opt/whatsapp/bin/wait_on_postgres.sh", "/opt/whatsapp/bin/launch_within_docker.sh"]
@@ -42,12 +41,11 @@ services:
       ORCHESTRATION: DOCKER-COMPOSE
     depends_on:
       - "db"
+    network_mode: bridge
     links:
       - db
     cap_drop:
       - MKNOD
-    networks:
-      - bot-bridge
   waweb:
     image: docker.whatsapp.biz/web:v${WA_API_VERSION:?Run docker-compose with env var WA_API_VERSION (ex. WA_API_VERSION=2.39.2 docker-compose <command> <options>)}
     command: ["/opt/whatsapp/bin/wait_on_postgres.sh", "/opt/whatsapp/bin/launch_within_docker.sh"]
@@ -68,12 +66,6 @@ services:
     links:
       - db
       - wacore
+    network_mode: bridge
     cap_drop:
       - MKNOD
-    networks:
-      - bot-bridge
-  networks:
-    bot-bridge:
-      driver: bridge
-      external: true
-    
