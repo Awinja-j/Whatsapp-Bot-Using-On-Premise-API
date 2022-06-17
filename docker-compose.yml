@@ -1,9 +1,20 @@
-version: '3.8'
+# Copyright (c) Facebook, Inc. and its affiliates.
+
+# This source code is licensed under the MIT license found in the
+# LICENSE file in the root directory of this source tree.
+
+version: '3'
+
+volumes:
+  whatsappMedia:
+    driver: local
+  postgresData:
+    driver: local
 
 services:
-  app:
+  webhook:
     build: .
-    command: /bin/sh -c ("python app.py db init && python app.py db migrate && python app.py db upgrade && gunicorn --bind 0.0.0.0:5000 app:app")
+    command: /bin/sh -c ("gunicorn --bind 0.0.0.0:5000 app:app")
     environment:
       - Debug=1
     env_file:
@@ -12,5 +23,63 @@ services:
       - "5000:5000"
     restart: on-failure
     volumes:
-      - ./:/whatsapp-bot
-
+      - ./:/whatsapp-webhook
+    network_mode: bridge
+  db:
+    image: postgres:10.19
+    command: "-p 5432 -N 500"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: testpass
+      POSTGRES_USER: root
+    expose:
+        - "5432"
+    ports:
+        - "5432:5432"
+    volumes:
+     - postgresData:/var/lib/postgresql/data
+    network_mode: bridge
+    cap_drop:
+      - MKNOD
+  wacore:
+    image: docker.whatsapp.biz/coreapp:v${WA_API_VERSION:?Run docker-compose with env var WA_API_VERSION (ex. WA_API_VERSION=2.39.2 docker-compose <command> <options>)}
+    command: ["/opt/whatsapp/bin/wait_on_postgres.sh", "/opt/whatsapp/bin/launch_within_docker.sh"]
+    volumes:
+     - whatsappMedia:/usr/local/wamedia
+    env_file:
+      - db.env
+    environment:
+      # This is the version of the docker templates being used to run WhatsApp Business API
+      WA_RUNNING_ENV_VERSION: v2.2.3
+      ORCHESTRATION: DOCKER-COMPOSE
+    depends_on:
+      - "db"
+    network_mode: bridge
+    links:
+      - db
+    cap_drop:
+      - MKNOD
+  waweb:
+    image: docker.whatsapp.biz/web:v${WA_API_VERSION:?Run docker-compose with env var WA_API_VERSION (ex. WA_API_VERSION=2.39.2 docker-compose <command> <options>)}
+    command: ["/opt/whatsapp/bin/wait_on_postgres.sh", "/opt/whatsapp/bin/launch_within_docker.sh"]
+    ports:
+     - "9090:443"
+    volumes:
+     - whatsappMedia:/usr/local/wamedia
+    env_file:
+      - db.env
+    environment:
+      WACORE_HOSTNAME: wacore
+      # This is the version of the docker templates being used to run WhatsApp Business API
+      WA_RUNNING_ENV_VERSION: v2.2.3
+      ORCHESTRATION: DOCKER-COMPOSE
+      WA_API_KEY: 
+    depends_on:
+      - "db"
+      - "wacore"
+    links:
+      - db
+      - wacore
+    network_mode: bridge
+    cap_drop:
+      - MKNOD
